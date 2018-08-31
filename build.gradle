@@ -9,8 +9,11 @@ buildscript {
 
 apply plugin: 'scala'
 apply plugin: 'idea'
+apply plugin: 'application'
 apply plugin: 'org.springframework.boot'
 apply plugin: 'io.spring.dependency-management'
+
+mainClassName = 'hello.Application'
 
 bootJar {
     baseName = 'gs-spring-boot'
@@ -27,4 +30,5 @@ targetCompatibility = 1.8
 dependencies {
     compile("org.springframework.boot:spring-boot-starter-web")
     compile("org.scala-lang:scala-library:2.12.6")
+    compile("org.springframework.boot:spring-boot-devtools")
 }
