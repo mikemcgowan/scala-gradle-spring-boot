@@ -9,4 +9,3 @@ class HelloController {
     def index(): String = "Greetings from Spring Boot!"
 
 }
-
