@@ -1,7 +1,5 @@
 package hello
 
-import java.time.format.DateTimeFormatter
-
 import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.web.bind.annotation.{RequestMapping, RestController}
 
@@ -15,7 +13,7 @@ class HelloController {
   def index(): String =
     String format (
       "Greetings from Spring Boot @ %s",
-      timeService.localDateTime().format(DateTimeFormatter.ISO_LOCAL_DATE_TIME)
+      timeService.localDateTime()
     )
 
 }
