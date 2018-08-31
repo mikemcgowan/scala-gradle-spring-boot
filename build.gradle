@@ -15,11 +15,6 @@ apply plugin: 'io.spring.dependency-management'
 
 mainClassName = 'hello.Application'
 
-bootJar {
-    baseName = 'gs-spring-boot'
-    version =  '0.1.0'
-}
-
 repositories {
     mavenCentral()
 }
