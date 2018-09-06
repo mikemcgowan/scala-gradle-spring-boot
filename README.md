@@ -1,4 +1,4 @@
-# Scala with Gradle and Spring Boot
+# A Spring Boot app in Scala with Gradle
 
 ```
 ./gradlew bootRun
