@@ -24,3 +24,6 @@ dependencies {
     compile 'org.springframework.boot:spring-boot-devtools'
     compile 'org.scala-lang:scala-library:2.12.6'
 }
+
+task stage(dependsOn: ['build', 'clean'])
+build.mustRunAfter clean
