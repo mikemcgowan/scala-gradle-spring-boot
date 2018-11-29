@@ -1,5 +1,13 @@
 # A Spring Boot app in Scala with Gradle
 
+Optionally:
+
+```
+./gradlew build --continuous
+```
+
+Then:
+
 ```
 ./gradlew bootRun
 ```
